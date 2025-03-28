@@ -19,5 +19,6 @@ from lloguer import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('lloguer/autos', views.view_autos),
+    path('lloguer/autos/', views.view_autos, name='view_autos'),
+    path('lloguer/reserva/', views.create_reserva, name='create_reserva'),
 ]
